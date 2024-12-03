@@ -1,54 +1,60 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maskapai Airlines</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airlanes - Singapore to Malaysia</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Navbar -->
+  <header>
+    <div class="logo">Airlanes</div>
     <nav>
-        <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="about.html">Tentang Kami</a></li>
-            <li><a href="flights.html">Penerbangan</a></li>
-            <li><a href="booking.html">Reservasi</a></li>
-            <li><a href="promotions.html">Promo</a></li>
-            <li><a href="contact.html">Kontak</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
+      <ul>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#routes">Routes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header>
-        <h1>Selamat Datang di Maskapai Airlines</h1>
-        <p>Terbang dengan kenyamanan dan keamanan</p>
-        <a href="booking.html" class="cta">Pesan Sekarang</a>
-    </header>
+  <section id="booking">
+    <h1>Book Your Flight</h1>
+    <form>
+      <label for="from">From:</label>
+      <select id="from" name="from">
+        <option value="Singapore">Singapore</option>
+      </select>
 
-    <!-- Feature Highlights -->
-    <section class="features">
-        <h2>Layanan Kami</h2>
-        <div class="feature-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9WOV1C7ITkgdGwQgh7Eg7wwKpQWG78NoHV2coLkUqw8a1c809ZQ-a3Oq&s=10" alt="Kursi Nyaman">
-            <p>Kursi Nyaman</p>
-        </div>
-        <div class="feature-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXvMcHo8tJf7oA8QTK4GLOiftAcnCIQ20p9gRk0imFGkWJrYrTGqKO7PiP&s=10" alt="Pesawat Terbaru">
-            <p>Pesawat Terbaru</p>
-        </div>
-        <div class="feature-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMUMQLJrVRbkJTZtN99vFd-GthZHaYGkOUuywOO1wUCpN2L5ccazHMCR0&s=10" alt="Layanan Bandara">
-            <p>Layanan Bandara</p>
-        </div>
-    </section>
+      <label for="to">To:</label>
+      <select id="to" name="to">
+        <option value="Malaysia">Malaysia</option>
+      </select>
 
-    <footer>
-        <p>&copy; 2024 Maskapai Airlines. All rights reserved.</p>
-    </footer>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date">
 
+      <label for="passengers">Passengers:</label>
+      <input type="number" id="passengers" name="passengers" min="1" max="10">
+
+      <button type="submit">Search Flights</button>
+    </form>
+  </section>
+
+  <section id="routes">
+    <h2>Popular Routes</h2>
+    <ul>
+      <li>Singapore - Kuala Lumpur</li>
+      <li>Singapore - Penang</li>
+      <li>Singapore - Langkawi</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div>
+      <p>Contact us: support@airlanes.com</p>
+      <p>&copy; 2024 Airlanes. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
-          </html>
-          
+</html>
